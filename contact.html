@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | StayClone Premium</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+    <div class="container nav-flex">
+        <a href="hero.html" class="logo">StayClone</a>
+        <ul class="nav-links">
+            <li><a href="hero.html">Home</a></li>
+            <li><a href="listing.html">Explore</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="btn-primary">Sign In</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="cursor-glow"></div>
+    <div class="blob-bg"></div>
+
+    <main class="contact-page">
+        <div class="contact-container">
+            
+            <div class="info-panel">
+                <div class="badge">Available 24/7</div>
+                <h1 class="title">Let’s <span>Connect.</span></h1>
+                <p class="description">Have a question about a listing or want to host your home in Mumbai? Our concierge team is ready to help.</p>
+                
+                <div class="contact-cards">
+                    <div class="c-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="c-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>hello@stayclone.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="form-panel" id="tiltCard">
+                <form id="ultraContactForm">
+                    <div class="input-wrap">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label>Your Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="input-wrap">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label>Email Address</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="input-wrap">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label>Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-shimmer"></div>
+                    </button>
+                </form>
+                <div id="formSuccess" class="success-msg">Message Sent! <i class="fas fa-check-circle"></i></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>

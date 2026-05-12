@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Listings | StayClone</title>
+    <link rel="stylesheet" href="listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container nav-flex">
+        <a href="hero.html" class="logo">StayClone</a>
+        <ul class="nav-links">
+            <li><a href="hero.html">Home</a></li>
+            <li><a href="listing.html">Explore</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="btn-primary">Sign In</a></li>
+        </ul>
+    </div>
+</nav>
+    <main class="listings-layout">
+        <aside class="filter-sidebar">
+            <h3>Filters</h3>
+            
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="range" min="2000" max="20000" step="500" id="priceRange">
+                <div class="price-labels">
+                    <span>₹2,000</span>
+                    <span>₹20,000</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Property Type</label>
+                <div class="checkbox-item"><input type="checkbox"> Entire Home</div>
+                <div class="checkbox-item"><input type="checkbox"> Private Room</div>
+                <div class="checkbox-item"><input type="checkbox"> Luxury Villa</div>
+            </div>
+
+            <div class="filter-group">
+                <label>Amenities</label>
+                <div class="checkbox-item"><input type="checkbox"> Wifi</div>
+                <div class="checkbox-item"><input type="checkbox"> Kitchen</div>
+                <div class="checkbox-item"><input type="checkbox"> Pool</div>
+            </div>
+
+            <button class="btn-apply">Apply Filters</button>
+        </aside>
+
+        <section class="results-container">
+            <div class="results-header">
+                <p><span id="listingCount">6</span> homes in Mumbai</p>
+                <div class="sort-by">
+                    Sort by: <strong>Price (Low to High)</strong>
+                </div>
+            </div>
+
+            <div class="property-grid" id="listingGrid">
+                </div>
+        </section>
+    </main>
+
+    <script src="listing.js"></script>
+</body>
+</html>

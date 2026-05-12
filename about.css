@@ -1,0 +1,297 @@
+/* About Hero */
+.about-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Mission Section */
+.mission-section {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.mission-text { flex: 2; }
+.mission-text h2 { font-size: 2.5rem; margin-bottom: 20px; }
+.mission-text p { font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 15px; }
+
+.mission-stats {
+    flex: 1;
+    display: grid;
+    gap: 20px;
+}
+
+.stat-box {
+    background: #ff385c;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.stat-box h3 { font-size: 2.5rem; }
+
+/* Values Section */
+.values-bg { background: #f9f9f9; padding: 100px 20px; }
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.value-card i { font-size: 2.5rem; color: #ff385c; margin-bottom: 20px; }
+/* Navigation Bar Core */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff385c; /* Signature Airbnb-style Red */
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff385c;
+}
+
+/* Primary Button Style (Sign In / Host) */
+.btn-primary {
+    background-color: #ff385c;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700 !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e31c5f;
+    transform: scale(1.05);
+}
+
+/* Responsive Menu (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Usually, you'd implement a hamburger menu here */
+    }
+    
+    .nav-flex {
+        justify-content: center; /* Center logo on mobile */
+    }
+}
+.nav-links li a.active {
+    color: #ff385c;
+    border-bottom: 2px solid #ff385c;
+    padding-bottom: 5px;
+}
+
+/* Navigation Bar Core */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff385c; /* Signature Airbnb-style Red */
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff385c;
+}
+
+/* Primary Button Style (Sign In / Host) */
+.btn-primary {
+    background-color: #ff385c;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700 !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e31c5f;
+    transform: scale(1.05);
+}
+
+/* Responsive Menu (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Usually, you'd implement a hamburger menu here */
+    }
+    
+    .nav-flex {
+        justify-content: center; /* Center logo on mobile */
+    }
+}
+.nav-links li a.active {
+    color: #ff385c;
+    border-bottom: 2px solid #ff385c;
+    padding-bottom: 5px;
+}
+/* Container to center the button below the grid */
+.view-all-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* The Button Style */
+.btn-view-all {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #222222; /* Dark elegant finish */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #222222;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover State - Invert colors or shift for depth */
+.btn-view-all:hover {
+    background-color: #ffffff;
+    color: #222222;
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Active State - Click effect */
+.btn-view-all:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Teaser Section Styling */
+.home-about-teaser {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+.teaser-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.teaser-content p {
+    color: #717171;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Secondary Button (About Us Link) */
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #222222;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1.5px solid #222222;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border-color: #222222;
+}

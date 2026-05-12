@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayClone | Find Your Next Home</title>
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="<php echo get_template_directory_uri(); ?>/your-style.css">
+<script src="<?php echo get_template_directory_uri(); ?>/your-script.js" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+    <div class="container nav-flex">
+        <a href="index.html" class="logo">StayClone</a>
+        <ul class="nav-links">
+            <li><a href="hero.html">Home</a></li>
+            <li><a href="listing.html">Explore</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="btn-primary">Sign In</a></li>
+        </ul>
+    </div>
+</nav>
+        <div class="hero-overlay">
+            <div class="hero-content">
+
+                <h1>Find your next stay</h1>
+                <p>Discover entire homes and private rooms perfect for any trip.</p>
+                
+                <div class="search-box">
+                    <form class="search-form">
+                        <div class="search-group">
+                            <label>Location</label>
+                            <input type="text" placeholder="Where are you going?">
+                        </div>
+                        <div class="search-group">
+                            <label>Check In</label>
+                            <input type="date">
+                        </div>
+                        <div class="search-group">
+                            <label>Guests</label>
+                            <input type="number" placeholder="Add guests">
+                        </div>
+                        <button type="submit" class="btn-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="listings">
+     <div class="view-all-container">
+    <a href="listing.html" class="btn-view-all">View all properties</a>
+</div>
+
+            <div class="property-grid" id="propertyGrid">
+                </div>
+        </section>
+
+        <section class="home-about-teaser">
+    <div class="container">
+        <div class="teaser-content">
+            <h2>Experience hospitality like never before</h2>
+            <p>From local stays in Mumbai to luxury escapes, learn more about our journey and commitment to your comfort.</p>
+            
+            <div class="btn-group">
+                <a href="about.html" class="btn-secondary">Learn Our Story</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-home"></i>
+                <h3>Verified Homes</h3>
+                <p>Hand-picked stays for quality and comfort.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Booking</h3>
+                <p>Protected payments and 24/7 support.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-magic"></i>
+                <h3>Unique Stays</h3>
+                <p>From lofts to villas, find your vibe.</p>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="hero.js"></script>
+</body>
+</html>

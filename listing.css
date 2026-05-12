@@ -1,0 +1,138 @@
+:root {
+    --brand: #ff385c;
+    --border: #dddddd;
+    --text: #222222;
+}
+
+body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text); }
+
+.listings-layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+/* Sidebar Styling */
+.filter-sidebar {
+    width: 280px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.filter-group { margin-bottom: 30px; }
+.filter-group label { display: block; font-weight: bold; margin-bottom: 15px; }
+
+.price-labels { display: flex; justify-content: space-between; font-size: 12px; color: #717171; }
+
+.checkbox-item { margin-bottom: 10px; font-size: 14px; display: flex; align-items: center; gap: 10px; }
+
+.btn-apply {
+    width: 100%;
+    background: var(--text);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Results Grid */
+.results-container { flex: 1; }
+.results-header { display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Reusing Property Card Styles from Home Page */
+.card img { width: 100%; aspect-ratio: 1/1; border-radius: 12px; object-fit: cover; }
+.card-info h3 { font-size: 1rem; margin-top: 10px; }
+.card-info .price { font-weight: bold; margin-top: 5px; }
+/* Navigation Bar Core */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff385c; /* Signature Airbnb-style Red */
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff385c;
+}
+
+/* Primary Button Style (Sign In / Host) */
+.btn-primary {
+    background-color: #ff385c;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700 !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e31c5f;
+    transform: scale(1.05);
+}
+
+/* Responsive Menu (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Usually, you'd implement a hamburger menu here */
+    }
+    
+    .nav-flex {
+        justify-content: center; /* Center logo on mobile */
+    }
+}
+.nav-links li a.active {
+    color: #ff385c;
+    border-bottom: 2px solid #ff385c;
+    padding-bottom: 5px;
+}
